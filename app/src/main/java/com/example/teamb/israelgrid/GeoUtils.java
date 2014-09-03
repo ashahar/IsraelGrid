@@ -49,9 +49,9 @@ public class GeoUtils {
         double K4 = k0*nu*T1;
         double K5 = k0*T1*T2*(nu/6)*(1-T3+e1sq*T2);
 
-        // Easting relative to central meridian
+        // Easting
         out[0] = Math.round(K4*P+K5*P*P*P + 219529.58);
-        // Northing from equator
+        // Northing
         out[1] = Math.round(K1 + K2*P*P + K3*P*P*P*P - 3512424.41 + 626907.39);
     }
 
