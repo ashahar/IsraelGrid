@@ -33,7 +33,7 @@ public class GPSItmActivity extends Activity {
     static final int MIN_UPDATE_TIME = 500;
     static final int MIN_UPDATE_DISTANCE = 0;
     static final String TAG="GEOITM";
-    private float mDegrees;
+    private float mDegrees=0;
     private LocationManager mLocationManager;
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
@@ -96,7 +96,7 @@ public class GPSItmActivity extends Activity {
             mSensorManager.registerListener(mSensorEventListener, mMagneticField, SensorManager.SENSOR_DELAY_UI);
             mSensorManager.registerListener(mSensorEventListener, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
         }
-        //resetFields();
+        resetFields();
     }
 
     @Override
@@ -155,7 +155,7 @@ public class GPSItmActivity extends Activity {
                 Animation.RELATIVE_TO_SELF, 0.5f,
                 Animation.RELATIVE_TO_SELF, 0.5f);
 
-        ra.setDuration(210);
+        ra.setDuration(250);
         ra.setFillAfter(true);
         mCompassImage.startAnimation(ra);
         mDegrees = degrees;
