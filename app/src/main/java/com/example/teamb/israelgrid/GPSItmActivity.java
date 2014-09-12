@@ -185,7 +185,7 @@ public class GPSItmActivity extends Activity {
     };
 
 
-    SensorEventListener mSensorEventListener = new SensorEventListener() {
+    private SensorEventListener mSensorEventListener = new SensorEventListener() {
 
         private float[] mGravity = null;
         private float[] mGeomagnetic = null;
