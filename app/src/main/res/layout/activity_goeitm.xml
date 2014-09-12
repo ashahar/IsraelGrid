@@ -30,6 +30,9 @@
                     android:layout_marginLeft="10dip"
                     android:text="Latitude: "
                     android:textSize="20dip"
+                    android:gravity="right"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
                     />
                 <TextView
                     android:id="@+id/TextView_Latitude"
@@ -49,9 +52,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dip"
-                    android:layout_marginRight="5dip"
                     android:text="Longitude: "
                     android:textSize="20dip"
+                    android:gravity="right"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
                     />
                 <TextView
                     android:id="@+id/TextView_Longitude"
@@ -71,9 +76,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dip"
-                    android:layout_marginRight="5dip"
                     android:text="ITM: "
                     android:textSize="20dip"
+                    android:gravity="right"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
                     />
                 <TextView
                     android:id="@+id/TextView_ITM"
@@ -93,9 +100,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dip"
-                    android:layout_marginRight="5dip"
                     android:text="Speed: "
                     android:textSize="20dip"
+                    android:gravity="right"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
                     />
                 <TextView
                     android:id="@+id/TextView_Speed"
@@ -115,9 +124,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dip"
-                    android:layout_marginRight="5dip"
                     android:text="Accuracy: "
                     android:textSize="20dip"
+                    android:gravity="right"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
                     />
                 <TextView
                     android:id="@+id/TextView_Accuracy"

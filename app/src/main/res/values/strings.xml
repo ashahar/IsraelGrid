@@ -2,8 +2,7 @@
 <resources>
 
     <string name="app_name">IsraelGrid</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="location_unavailable">Unavailable</string>
+    <string name="unavailable">Unavailable</string>
 
 </resources>

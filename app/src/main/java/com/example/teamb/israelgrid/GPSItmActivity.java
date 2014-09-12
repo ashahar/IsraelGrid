@@ -112,11 +112,11 @@ public class GPSItmActivity extends Activity {
     }
 
     private void resetFields() {
-        mTextViewLatitude.setText(R.string.location_unavailable);
-        mTextViewLongitude.setText(R.string.location_unavailable);
-        mTextViewSpeed.setText(R.string.location_unavailable);
-        mTextViewITM.setText(R.string.location_unavailable);
-        mTextViewAccuracy.setText(R.string.location_unavailable);
+        mTextViewLatitude.setText(R.string.unavailable);
+        mTextViewLongitude.setText(R.string.unavailable);
+        mTextViewSpeed.setText(R.string.unavailable);
+        mTextViewITM.setText(R.string.unavailable);
+        mTextViewAccuracy.setText(R.string.unavailable);
         rotateImage(0);
     }
 
@@ -132,14 +132,14 @@ public class GPSItmActivity extends Activity {
         mTextViewITM.setText(itm[1] + "N " + itm[0]+ "E");
 
         if (location.hasAccuracy()) {
-            mTextViewAccuracy.setText(String.format("%.2fm", location.getAccuracy()));
+            mTextViewAccuracy.setText(String.format("%.2f", location.getAccuracy()));
         } else {
-            mTextViewAccuracy.setText(R.string.location_unavailable);
+            mTextViewAccuracy.setText(R.string.unavailable);
         }
 
-        String speed = getResources().getText(R.string.location_unavailable).toString();
+        String speed = getResources().getText(R.string.unavailable).toString();
         if (location.hasSpeed()) {
-            speed = String.format("%dkm/h",Math.round(location.getSpeed()*3.6));
+            speed = "" + Math.round(location.getSpeed()*3.6);
         }
 
         if (location.hasBearing()) {

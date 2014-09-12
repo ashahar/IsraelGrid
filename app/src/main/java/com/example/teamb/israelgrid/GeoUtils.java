@@ -47,7 +47,7 @@ public class GeoUtils {
         double K2 = k0*nu*T0*T1/2;
         double K3 = k0*((nu*T0*T1*T2)/24)*(5-T3+9*e1sq*T2+4*e1sq*e1sq*T2*T2);
         double K4 = k0*nu*T1;
-        double K5 = k0*T1*T2*(nu/6)*(1-T3+e1sq*T2);
+        double K5 = k0*((nu*T1*T2)/6)*(1-T3+e1sq*T2);
 
         // Easting
         out[0] = Math.round(K4*P+K5*P*P*P + 219529.58);
